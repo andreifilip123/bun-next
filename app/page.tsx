@@ -1,7 +1,90 @@
 import {ModeToggle} from "@/components/ui/mode-toggle";
+import {Timeline, TimelinePropsItem} from "@/components/ui/timeline";
 import Image from "next/image";
 
 export default function Home() {
+  const items: TimelinePropsItem[] = [
+    {
+      title: "Create Next App",
+      bullet: <span className="text-primary">1</span>,
+      children: (
+        <>
+          <p className="text-sm opacity-50">
+            Get started with Next.js in seconds.
+          </p>
+          <p className="text-sm opacity-50">
+            A complete Next.js project, ready for{" "}
+            <a
+              href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              one-click deployment
+            </a>
+            .
+          </p>
+        </>
+      ),
+    },
+    {
+      title: "Next.js Documentation",
+      bullet: <span className="text-primary">2</span>,
+      children: (
+        <>
+          <p className="text-sm opacity-50">
+            Find in-depth information about Next.js features and API.
+          </p>
+          <p className="text-sm opacity-50">
+            <a
+              href="https://nextjs.org/docs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn more about Next.js in the documentation
+            </a>
+            .
+          </p>
+        </>
+      ),
+    },
+    {
+      title: "Deploy on Vercel",
+      bullet: <span className="text-primary">3</span>,
+      children: (
+        <>
+          <p className="text-sm opacity-50">
+            Instantly deploy your Next.js site to a public URL with Vercel.
+          </p>
+          <p className="text-sm opacity-50">
+            <a
+              href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Import from GitHub
+            </a>
+            , GitLab, Bitbucket, or any external repository that supports{" "}
+            <a
+              href="https://vercel.com/docs/git?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Git
+            </a>
+            . Deploy to the{" "}
+            <a
+              href="https://vercel.com/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Vercel Platform
+            </a>
+          </p>
+        </>
+      ),
+    },
+  ];
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -35,6 +118,10 @@ export default function Home() {
           height={37}
           priority
         />
+      </div>
+
+      <div>
+        <Timeline items={items} activeItem={1} />
       </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
