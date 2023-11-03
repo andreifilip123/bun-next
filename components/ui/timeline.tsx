@@ -1,4 +1,4 @@
-import {TimelineItem, TimelineItemProps} from "./timeline-item";
+import { TimelineItem, TimelineItemProps } from "./timeline-item";
 
 export type TimelinePropsItem = Omit<
   TimelineItemProps,

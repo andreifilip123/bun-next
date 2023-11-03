@@ -1,5 +1,5 @@
-import {ModeToggle} from "@/components/ui/mode-toggle";
-import {Timeline, TimelinePropsItem} from "@/components/ui/timeline";
+import { ModeToggle } from "@/components/ui/mode-toggle";
+import { Timeline, TimelinePropsItem } from "@/components/ui/timeline";
 import Image from "next/image";
 
 export default function Home() {
