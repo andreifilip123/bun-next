@@ -19,7 +19,7 @@
     "clsx": "^2.0.0",
     "eslint": "8.54.0",
     "eslint-config-next": "latest",
-    "lucide-react": "^0.292.0",
+    "lucide-react": "^0.293.0",
     "next": "latest",
     "next-themes": "^0.2.1",
     "postcss": "8.4.31",
