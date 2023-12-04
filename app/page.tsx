@@ -1,3 +1,4 @@
+import { Timeline } from "@/components/Timeline";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 import Image from "next/image";
 
@@ -36,6 +37,7 @@ export default function Home() {
           priority
         />
       </div>
+      <Timeline startDate={new Date(2016, 10, 25)} endDate={new Date()} />
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
